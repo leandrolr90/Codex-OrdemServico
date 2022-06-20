@@ -3,6 +3,9 @@
     <persistence-unit name="app" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
+        <class>app.entity.TipoServico</class>
+        <class>app.entity.OrdemServico</class>
+        <class>app.entity.Criticidade</class>
         <class>app.entity.AuditLog</class>
         <class>app.entity.Device</class>
         <class>app.entity.RoleSecurable</class>
@@ -17,6 +20,7 @@
         <class>app.entity.ApplicationUser</class>
         <properties>
             <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+            <property name="cronapp.diagram.namespace" value="app"/>
         </properties>
     </persistence-unit>
 </persistence>

@@ -896,7 +896,7 @@
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
-          "isNullable": true,
+          "isNullable": false,
           "pkType": "",
           "multitenantContext": "",
           "jsonIgnore": false,
@@ -960,7 +960,7 @@
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
-          "isNullable": true,
+          "isNullable": false,
           "pkType": "",
           "multitenantContext": "",
           "jsonIgnore": false,
@@ -2629,7 +2629,7 @@
         "Id:java.lang.String",
         "Descricao:java.lang.String",
         "InicioAtendimento:java.lang.Double",
-        "TerminoAtendimento:java.lang.String",
+        "TerminoAtendimento:java.lang.Double",
         "Criticidade:Criticidade"
       ],
       "attrs": {
@@ -2647,7 +2647,7 @@
         ".uml-class-attrs-value": {
           "font-size": 11,
           "ref-x": 135.890625,
-          "text": "Texto\nTexto\nNumérico\nTexto\nCriticidade\n"
+          "text": "Texto\nTexto\nNumérico\nNumérico\nCriticidade\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
@@ -2774,7 +2774,7 @@
         },
         {
           "name": "TerminoAtendimento",
-          "type": "java.lang.String",
+          "type": "java.lang.Double",
           "dbName": "TerminoAtendimento",
           "dbLength": "",
           "dbPrecision": "",
@@ -2844,8 +2844,8 @@
       "modelType": "Table",
       "name": "TipoServico",
       "position": {
-        "x": 1164,
-        "y": 80
+        "x": 1154,
+        "y": 86
       },
       "queries": [],
       "realName": "",
@@ -3828,210 +3828,6 @@
       "attributes": [
         "id:java.lang.String",
         "securable:Securable",
-        "user:User"
-      ],
-      "attrs": {
-        ".": {
-          "display": "none"
-        },
-        ".uml-class-attrs-rect": {
-          "fill": "#fffec0",
-          "height": 90,
-          "transform": "translate(0,50)"
-        },
-        ".uml-class-attrs-text": {
-          "fill": "#000",
-          "font-size": 11,
-          "text": "id\nsecurable\nuser\n"
-        },
-        ".uml-class-attrs-value": {
-          "font-size": 11,
-          "ref-x": 81.703125,
-          "text": "Texto\nSecurable\nUser\n"
-        },
-        ".uml-class-methods-rect": {
-          "fill": "#fffec0",
-          "height": 30,
-          "transform": "translate(0,140)"
-        },
-        ".uml-class-methods-text": {
-          "fill": "#0066FF",
-          "font-size": 11,
-          "text": ""
-        },
-        ".uml-class-name-rect": {
-          "fill": "#fffec0",
-          "height": 50,
-          "transform": "translate(0,0)"
-        },
-        ".uml-class-name-text": {
-          "fill": "#000",
-          "font-size": 12,
-          "font-weight": "bold",
-          "text": "UserSecurable"
-        },
-        "rect": {
-          "stroke": "yellow",
-          "stroke-width": 2
-        }
-      },
-      "audit": false,
-      "dbFieldNames": [
-        "id",
-        "securable_id",
-        "user_id"
-      ],
-      "dbLengths": [
-        255,
-        255,
-        255
-      ],
-      "dbPrecisions": [
-        "",
-        "",
-        ""
-      ],
-      "dbScales": [
-        "",
-        "",
-        ""
-      ],
-      "fields": [
-        {
-          "name": "id",
-          "type": "java.lang.String",
-          "dbName": "id",
-          "dbLength": 255,
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
-          "label": "Id",
-          "mask": "",
-          "isPrimaryKey": true,
-          "isUniqueKey": false,
-          "isNullable": false,
-          "pkType": "None",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false
-        },
-        {
-          "name": "securable",
-          "type": "Securable",
-          "dbName": "securable_id",
-          "dbLength": 255,
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Securable",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": false,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": true,
-          "isVersion": false
-        },
-        {
-          "name": "user",
-          "type": "User",
-          "dbName": "user_id",
-          "dbLength": 255,
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "User",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": false,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": true,
-          "isVersion": false
-        }
-      ],
-      "id": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
-      "isRest": "true",
-      "keyTypes": [
-        "None",
-        "None",
-        "None"
-      ],
-      "labels": [
-        "Id",
-        "Securable",
-        "User"
-      ],
-      "methods": [],
-      "modelType": "Table",
-      "name": "UserSecurable",
-      "nullables": [
-        "id",
-        "securable",
-        "user"
-      ],
-      "position": {
-        "x": 816.25,
-        "y": 648.7530517578125
-      },
-      "primaryKeys": [
-        "id"
-      ],
-      "queries": [],
-      "requireds": [],
-      "restSecurity": {
-        "delete": "Administrators",
-        "get": "Administrators",
-        "post": "Administrators",
-        "put": "Administrators"
-      },
-      "role": "AssociationClass",
-      "runtimeClass": "cronos.widgets.joint.uml.Class",
-      "sequences": [
-        "",
-        "",
-        ""
-      ],
-      "size": {
-        "height": 118.67058563232422,
-        "width": 149.25
-      },
-      "tableName": "USER_SECURABLE",
-      "type": "uml.Class",
-      "uniqueKeys": [],
-      "z": 2
-    },
-    {
-      "angle": 0,
-      "attributes": [
-        "id:java.lang.String",
-        "securable:Securable",
         "pattern:java.lang.String",
         "getMethodAllowed:java.lang.Boolean",
         "headMethodAllowed:java.lang.Boolean",
@@ -4839,52 +4635,6 @@
       "z": "4"
     },
     {
-      "attrs": {
-        ".": {
-          "display": "none"
-        },
-        ".marker-source": {
-          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
-          "fill": "#cecece"
-        },
-        ".marker-target": {
-          "d": "",
-          "fill": ""
-        }
-      },
-      "id": "83e8f8ff-5e03-4c37-9238-331c700d1d7a",
-      "labels": [
-        {
-          "position": 0.9,
-          "attrs": {
-            "rect": {
-              "fill": "transparent"
-            },
-            "text": {
-              "text": "*",
-              "font-family": "Arial",
-              "font-size": "12px",
-              "fill": "#cecece"
-            }
-          }
-        }
-      ],
-      "queries": [],
-      "relationFields": [
-        "user:target"
-      ],
-      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
-      "source": {
-        "id": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0"
-      },
-      "target": {
-        "id": "e35a650f-29ee-4683-8c1c-5cc61a955ddf"
-      },
-      "type": "uml.Composition",
-      "vertices": [],
-      "z": "4"
-    },
-    {
       "associationType": "Association",
       "attrs": {
         ".": {
@@ -4931,52 +4681,6 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 20
-    },
-    {
-      "attrs": {
-        ".": {
-          "display": "none"
-        },
-        ".marker-source": {
-          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
-          "fill": "#cecece"
-        },
-        ".marker-target": {
-          "d": "",
-          "fill": ""
-        }
-      },
-      "id": "a7142710-abbc-4ff8-8fe7-4dc114a1d35f",
-      "labels": [
-        {
-          "position": 0.9,
-          "attrs": {
-            "rect": {
-              "fill": "transparent"
-            },
-            "text": {
-              "text": "*",
-              "font-family": "Arial",
-              "font-size": "12px",
-              "fill": "#cecece"
-            }
-          }
-        }
-      ],
-      "queries": [],
-      "relationFields": [
-        "securable:target"
-      ],
-      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
-      "source": {
-        "id": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef"
-      },
-      "target": {
-        "id": "e35a650f-29ee-4683-8c1c-5cc61a955ddf"
-      },
-      "type": "uml.Composition",
-      "vertices": [],
-      "z": "4"
     },
     {
       "associationType": "Association",
@@ -5227,8 +4931,8 @@
       "name": "OrdemServico",
       "id": "faf78327-6c4d-4aa0-8afa-5c56a04a26bf",
       "cells": [
-        "c95f47ed-c8b3-4172-9a12-af03dbf7e054",
         "2cb77a47-91e0-4a4b-8be1-69f48bf9ffae",
+        "c95f47ed-c8b3-4172-9a12-af03dbf7e054",
         "184011cb-a29f-44a5-bb65-1f44ad75d5c1",
         "fbe4a477-8332-4235-a9a2-5db4a56fa3d0"
       ]
@@ -5250,8 +4954,7 @@
         "184011cb-a29f-44a5-bb65-1f44ad75d5c1",
         "d92238a3-a37d-4cc6-a543-d0687dc207cd",
         "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
-        "a9daca3f-9ddd-41ad-9961-200b89f35561",
-        "e35a650f-29ee-4683-8c1c-5cc61a955ddf"
+        "a9daca3f-9ddd-41ad-9961-200b89f35561"
       ]
     }
   ]
