@@ -989,7 +989,7 @@
       "name": "Criticidade",
       "position": {
         "x": 1464,
-        "y": 84
+        "y": 82
       },
       "queries": [],
       "realName": "",
@@ -1003,7 +1003,7 @@
       "tableName": "",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 24
+      "z": 32
     },
     {
       "angle": 0,
@@ -2845,7 +2845,7 @@
       "name": "TipoServico",
       "position": {
         "x": 1154,
-        "y": 86
+        "y": 84
       },
       "queries": [],
       "realName": "",
@@ -2859,7 +2859,7 @@
       "tableName": "",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 25
+      "z": 50
     },
     {
       "angle": 0,
@@ -4472,7 +4472,7 @@
       },
       "type": "uml.Composition",
       "vertices": [],
-      "z": 28
+      "z": 41
     },
     {
       "attrs": {
@@ -4777,7 +4777,7 @@
       },
       "type": "uml.Composition",
       "vertices": [],
-      "z": 27
+      "z": 49
     },
     {
       "associationType": "Association",
